@@ -1,0 +1,47 @@
+[
+  {
+    "_class": "com.spring.tutorial.microservice.products.domain.model.Product",
+    "id": 1,
+    "sku": "H01DEKFYPR",
+    "name": "Headphones",
+    "price": "39.99",
+    "currencyCode": "USD",
+    "stock": "40"
+  },
+  {
+    "_class": "com.spring.tutorial.microservice.products.domain.model.Product",
+    "id": 2,
+    "sku": "L02SJFUEKG",
+    "name": "Laptop",
+    "price": "579.99",
+    "currencyCode": "USD",
+    "stock": "58"
+  },
+  {
+    "_class": "com.spring.tutorial.microservice.products.domain.model.Product",
+    "id": 3,
+    "sku": "K03FKEFNHK",
+    "name": "Keyboard",
+    "price": "11.99",
+    "currencyCode": "USD",
+    "stock": "32"
+  },
+  {
+    "_class": "com.spring.tutorial.microservice.products.domain.model.Product",
+    "id": 4,
+    "sku": "M04FJDRHGO",
+    "name": "Mouse",
+    "price": "6.99",
+    "currencyCode": "USD",
+    "stock": "67"
+  },
+  {
+    "_class": "com.spring.tutorial.microservice.products.domain.model.Product",
+    "id": 5,
+    "sku": "N05DIGKRJV",
+    "name": "LED Monitor",
+    "price": "139.99",
+    "currencyCode": "USD",
+    "stock": "48"
+  }
+]

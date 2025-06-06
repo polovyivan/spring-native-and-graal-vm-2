@@ -1,0 +1,11 @@
+[
+  {
+    "_class": "com.spring.tutorial.microservice.orders.domain.model.StoreOrderCustomerData",
+    "id": 1,
+    "firstName": "Charles",
+    "lastName": "Houston",
+    "email": "Charles.Houston@mail.com",
+    "address": "412 Lawndale Dr, Gaston, South Carolina(SC), 29053",
+    "phoneNumber": "(803) 939-7043"
+  }
+]

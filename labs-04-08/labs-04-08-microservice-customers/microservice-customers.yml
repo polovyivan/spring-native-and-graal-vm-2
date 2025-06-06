@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-customers
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microservice-customers
+  template:
+    metadata:
+      labels:
+        app: microservice-customers
+    spec:
+      containers:
+        - name: microservice-customers
+          image: microservice-customers:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservice-customers
+spec:
+  selector:
+    app: microservice-customers
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 8082
+      targetPort: 8080

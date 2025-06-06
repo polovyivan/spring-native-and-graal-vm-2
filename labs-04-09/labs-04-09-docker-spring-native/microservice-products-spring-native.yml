@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-products-spring-native
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microservice-products-spring-native
+  template:
+    metadata:
+      labels:
+        app: microservice-products-spring-native
+    spec:
+      containers:
+        - name: microservice-products-spring-native
+          image: microservice-products-spring-native:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservice-products-spring-native
+spec:
+  selector:
+    app: microservice-products-spring-native
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 8083
+      targetPort: 8080

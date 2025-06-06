@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-products
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microservice-products
+  template:
+    metadata:
+      labels:
+        app: microservice-products
+    spec:
+      containers:
+        - name: microservice-products
+          image: microservice-products:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: microservice-products
+spec:
+  selector:
+    app: microservice-products
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 8083
+      targetPort: 8080

@@ -1,0 +1,17 @@
+[
+  {
+    "_class": "com.spring.tutorial.microservice.orders.domain.model.StoreOrder",
+    "id": 1,
+    "orderCustomerData": {
+      "_class": "com.spring.tutorial.microservice.orders.domain.model.StoreOrderCustomerData",
+      "id": 1
+    },
+    "storeOrderLines": [
+      {
+        "_class": "com.spring.tutorial.microservice.orders.domain.model.StoreOrderLine",
+        "id": 1
+      }
+    ],
+    "totalValue": "199.95"
+  }
+]

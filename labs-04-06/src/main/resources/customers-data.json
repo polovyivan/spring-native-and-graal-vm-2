@@ -1,0 +1,47 @@
+[
+  {
+    "_class": "com.spring.tutorial.microservice.customers.domain.model.Customer",
+    "id": 1,
+    "firstName": "Charles",
+    "lastName": "Houston",
+    "email": "Charles.Houston@mail.com",
+    "address": "412 Lawndale Dr, Gaston, South Carolina(SC), 29053",
+    "phoneNumber": "(803) 939-7043"
+  },
+  {
+    "_class": "com.spring.tutorial.microservice.customers.domain.model.Customer",
+    "id": 2,
+    "firstName": "Annette",
+    "lastName": "Wagner",
+    "email": "Annette.Wagner@mail.com",
+    "address": "1431 Peach Basket Rd, Felton, Delaware(DE), 19943",
+    "phoneNumber": "(302) 335-1922"
+  },
+  {
+    "_class": "com.spring.tutorial.microservice.customers.domain.model.Customer",
+    "id": 3,
+    "firstName": "Jennifer",
+    "lastName": "Philip",
+    "email": "Jennifer.Philip@mail.com",
+    "address": "534 Dell Rd, Bainbridge, Georgia(GA), 39819",
+    "phoneNumber": "(270) 274-3667"
+  },
+  {
+    "_class": "com.spring.tutorial.microservice.customers.domain.model.Customer",
+    "id": 4,
+    "firstName": "Douglas",
+    "lastName": "Healy",
+    "email": "Douglas.Healy@mail.com",
+    "address": "204 E Mclaurin St, Sardis, Mississippi(MS), 38666",
+    "phoneNumber": "(304) 358-7154"
+  },
+  {
+    "_class": "com.spring.tutorial.microservice.customers.domain.model.Customer",
+    "id": 5,
+    "firstName": "Craig",
+    "lastName": "Norton",
+    "email": "Craig.Norton@mail.com",
+    "address": "15942 Lexington Ave, Harvey, Illinois(IL), 60426",
+    "phoneNumber": "(530) 346-6709"
+  }
+]
